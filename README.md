@@ -267,7 +267,12 @@ Emi winkte zum Abschied und lief zurück zu ihrer Familie, bereit, ihnen alles z
 
 #### Unendliche Matheaufgaben
 
-<script input="submit" output="Aufgabe" default="Neue Aufgabe" modify="false">
+    --{{0}}--
+Wie versprochen hier die Unendlichen Aufgaben.
+Wenn du oben auf "Neue Aufgabe" klickst, dann wird darunter immer wieder eine neue Aufgabe erstellt.
+Ich bin gespannt, wie viele du lösen kannst.
+
+<script input="submit" output="Aufgabe" default="Neue Aufgabe" modify="false" style="font-size: 40px; margin-bottom: 90px;">
 if (!window.randomMath) {
     window.randomMath = 0
 }
@@ -275,7 +280,7 @@ if (!window.randomMath) {
 "Neue Aufgabe " + window.randomMath++
 </script>
 
-<script run-once modify="false" style="font-size: 40px; margin: 20px;">
+<script run-once modify="false" style="font-size: 40px;">
 // @input(`Aufgabe`)
 function generate() {
     // Zufällige Operation auswählen (0 für Addition, 1 für Subtraktion)
