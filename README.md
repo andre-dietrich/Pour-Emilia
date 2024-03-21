@@ -1,11 +1,11 @@
 <!--
 author:   Andre Dietrich
 
-version:  1.0.0
+version:  1.1.0
 
 language: de
 
-narrator: German Male
+narrator: Deutsch Male
 
 comment:  Kleine Lernaufgaben-Sammlung für meine Emilia.
 
@@ -219,3 +219,102 @@ Kannst du dieses schwere Rätzel lösen?
 |      " [[   5   ]] "|          6          |          3          |/
 +---------------------+---------------------+---------------------+
 ```
+
+### Donnerstag - 21.03.2024
+
+    --{{0}}--
+Hallo meine kleine Maus, heute ist ein neuer Tag und ich habe wieder ein paar kleine Aufgaben für dich.
+Zwei Sachen hatte ich dir ja versprochen, einmal eine Geschichte über ein Chamäleon und ein paar schwierigere Matheaufgaben, wobei du unendlich viele davon machen kannst.
+
+![Mathe Chamäleon](img/mathe-camaeleon.webp)
+
+#### Das Chamäleon
+<!--
+narrator: French Male
+-->
+
+
+![Urwald](img/chamaelon1.webp)
+Es war einmal ein kleines Mädchen namens Emi, das während eines Spaziergangs mit ihrer Familie tief in den Urwald wanderte. Emi liebte es, die bunten Blumen und die hohen Bäume zu betrachten. Aber was sie am meisten liebte, waren die Tiere, die im Urwald lebten.
+Plötzlich entdeckte Emi etwas Ungewöhnliches auf einem Blatt. Es war ein Chamäleon, das sich perfekt an seine Umgebung angepasst hatte. Emi war überrascht, als das Chamäleon zu sprechen begann.
+
+>    {{|>}}
+> _Hallo, ich bin Charlie, das Chamäleon._
+
+Emi, neugierig und erstaunt zugleich, setzte sich neben Charlie. "Wie machst du das mit deinen Farben?" fragte sie.
+
+>    {{|>}}
+> _Das ist ein besonderes Geheimnis der Chamäleons. Unsere Haut hat eine spezielle Schicht, die sich dehnen und zusammenziehen kann. Dadurch ändert sich die Farbe unserer Haut. Es hilft uns, uns zu verstecken und vor Raubtieren sicher zu sein._
+
+"Wow, das ist ja interessant!" sagte Emi. "Änderst du deine Farbe nur, um dich zu verstecken?"
+
+>    {{|>}}
+> _Nicht nur. Wir Chamäleons ändern unsere Farben auch, um zu zeigen, wie wir uns fühlen. Wenn wir glücklich oder aufgeregt sind, können wir heller werden. Und wenn wir uns bedroht fühlen, nehmen wir dunklere Farben an._
+
+Emi war fasziniert. "Das ist ja wie Magie!" Charlie lachte.
+
+>    {{|>}}
+> _Ja, man könnte es Magie nennen. Aber es ist auch wichtig zu wissen, dass wir Chamäleons langsame Tiere sind und gerne Zeit in den Bäumen verbringen. Wir fangen Insekten mit unserer langen, klebrigen Zunge._
+
+Emi nickte, beeindruckt von allem, was sie gelernt hatte. "Danke, Charlie, dass du mir so viel über Chamäleons beigebracht hast. Ich werde nie vergessen, wie besonders ihr seid."
+
+>    {{|>}}
+> _Es war mir eine Freude, Emi. Komm jederzeit wieder vorbei._
+
+Das werde ich, sagte Emi, bevor Charlie mit einem Zwinkern begann langsam seine Farbe änderte, um sich mit dem grünen Blatt zu verschmelzen.
+Emi winkte zum Abschied und lief zurück zu ihrer Familie, bereit, ihnen alles zu erzählen, was sie über das faszinierende Chamäleon gelernt hatte.
+
+
+#### Unendliche Matheaufgaben
+
+<script input="submit" output="Aufgabe" default="Neue Aufgabe" modify="false">
+if (!window.randomMath) {
+    window.randomMath = 0
+}
+
+"Neue Aufgabe " + window.randomMath++
+</script>
+
+<script run-once modify="false" style="font-size: 40px; margin: 20px;">
+// @input(`Aufgabe`)
+function generate() {
+    // Zufällige Operation auswählen (0 für Addition, 1 für Subtraktion)
+    const operation = Math.floor(Math.random() * 2);
+    // Zufällige Zahlen für a und b generieren
+    const a = Math.floor(Math.random() * 21); // Zahlen zwischen 0 und 20
+    const b = Math.floor(Math.random() * 21); // Zahlen zwischen 0 und 20
+    // Berechnung des Ergebnisses c
+    const c = operation === 0 ? a + b : a - b;
+    // Auswahl einer Zufälligen Zahl für die Markierung
+
+    if (c < 0 || c > 20) {
+        return generate();
+    }
+
+
+    const markedNumber = Math.floor(Math.random() * 3);
+    let problem = '';
+
+    // Aufbau der Aufgabe basierend auf der Operation
+    if (operation === 0) {
+        problem = `${a} + ${b} = ${c}`;
+    } else {
+        problem = `${a} - ${b} = ${c}`;
+    }
+
+    // Markierung der ausgewählten Zahl
+    if (markedNumber === 0) {
+        problem = problem.replace(a.toString(), `[[ ${a} ]]`);
+    } else if (markedNumber === 1) {
+        problem = problem.replace(b.toString(), `[[ ${b} ]]`);
+    } else {
+        problem = problem.replace(c.toString(), `[[ ${c} ]]`);
+    }
+
+
+
+    return "LIASCRIPT:  <!-- data-solution-button='off' -->\n:-) -->  " + problem;
+}
+
+generate();
+</script>
