@@ -323,3 +323,33 @@ function generate() {
 
 generate();
 </script>
+
+### Ostern
+
+Hallo Emilia, es hat etwas gedauert, aber ich habe die unendlichen Matheaufgaben endlich endlich repariert.
+Wenn du willst, dann kannst du vorher noch die Ostergeschichte lesen und dann so viele Aufgaben lösen, wie du möchtest.
+
+![Osterhase](img/eastern.webp)
+
+#### Emilia trifft den Osterhasen
+
+Ein kleines Mädchen namens Emila besuchte einst ihre Großseltern. Jedes Jahr freute sich Emilia riesig auf Ostern, besonders auf das Ostereiersuchen. Eines schönen Ostermorgens, als Omas Garten in sanftes Sonnenlicht getaucht war, begann Emilia mit der Suche.
+
+Während sie zwischen den Blumen und Büschen nach bunten Eiern suchte, bemerkte sie plötzlich etwas Weißes hinter einem Busch. Vorsichtig näherte sie sich und traute ihren Augen kaum: Vor ihr saß der Osterhase!
+
+"Hallo, ich bin Olli, der Osterhase," sagte er mit einer sanften Stimme.
+
+Emi konnte es nicht fassen. "Wirklich? Erzähl mir mehr über Ostern und die Osterhasen!"
+Olli lächelte. "Gerne, Emilia. Weißt du, Ostern ist ein sehr altes Fest. Es feiert den Frühling und neues Leben. Und ich, als Osterhase, habe eine besondere Aufgabe. Ich bringe die Ostereier und verstecke sie für Kinder wie dich. Die Eier sind ein Symbol für neues Leben und Hoffnung."
+
+Emilia hörte gespannt zu. "Aber warum gerade ein Hase?" fragte sie neugierig.
+"Das ist eine gute Frage," antwortete Olli. "Hasen sind ein Symbol für Fruchtbarkeit und das Erwachen der Natur im Frühling. Schon vor langer Zeit glaubten die Menschen, dass Hasen Glück bringen. Und so wurde ich, der Osterhase, zum Boten des Frühlings und der Freude."
+
+"Das ist ja interessant!" rief Emilia aus. "Und wie machst du all die bunten Eier?"
+
+Olli zwinkerte. "Das ist ein kleines Geheimnis. Aber ich kann dir sagen, dass es viel Freude und ein bisschen Magie braucht, um die Eier so schön bunt zu machen. Jedes Ei ist ein Kunstwerk und wird mit Liebe gemacht."
+Emilia lächelte breit. "Danke, Olli, dass du mir so viel über Ostern und die Osterhasen erzählt hast. Ich werde Ostern jetzt noch mehr lieben."
+
+"Das freut mich zu hören, Lena. Und vergiss nicht, Ostern ist eine Zeit der Freude, des Teilens und des Zusammenseins mit der Familie," sagte Olli, bevor er leise hoppelte und im Garten verschwand.
+
+Emilia fand an diesem Tag nicht nur bunte Ostereier, sondern auch eine wunderbare neue Geschichte, die sie ihrer Familie beim Osterfrühstück erzählte.
